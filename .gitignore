@@ -1,4 +1,4 @@
 # Local Netlify folder
-netlify
-.env
-package-lock.json
+/Netlify
+/.env
+/package-lock.json
