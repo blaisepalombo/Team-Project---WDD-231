@@ -1,0 +1,25 @@
+{
+  "name": "team-project---wdd-231",
+  "version": "1.0.0",
+  "description": "* Spotify mood playlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaisepalombo/Team-Project---WDD-231.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blaisepalombo/Team-Project---WDD-231/issues"
+  },
+  "homepage": "https://github.com/blaisepalombo/Team-Project---WDD-231#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "prettier": "^3.6.2",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
