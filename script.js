@@ -8,10 +8,15 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
     playlistContainer.innerHTML = '<p>Loading songs...</p>';
   
     try {
-      const res = await fetch('/.netlify/functions/getTracks', {
+      const res = await fetch('/.netlify/functions/getTracks.js', {
         method: 'POST',
         body: JSON.stringify({ mood }),
       });
+      if (!res.ok){
+        const text = await res.text();
+        console.error('Error response:', text);
+        throw new Error('Network response was not ok');
+      }
       const data = await res.json();
   
       if (data.error) throw new Error(data.error);
@@ -28,7 +33,7 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
         .join('');
     } catch (err) {
       console.error(err);
-      playlistContainer.innerHTML = '<p>Failed to load playlist.</p>';
+      playlistContainer.innerHTML = '<p>Failed to load playlist 😞</p>';
     }
   });
   
