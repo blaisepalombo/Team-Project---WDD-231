@@ -8,7 +8,7 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
     playlistContainer.innerHTML = '<p>Loading songs...</p>';
   
     try {
-      const res = await fetch('/.netlify/functions/getTracks', {
+      const res = await fetch('/.netlify/functions/getTrack', {
         method: 'POST',
         body: JSON.stringify({ mood }),
       });

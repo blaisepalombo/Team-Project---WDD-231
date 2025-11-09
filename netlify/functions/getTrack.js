@@ -27,7 +27,7 @@ export async function handler(event) {
     };
 
     const query = moodMap[mood] || "chill relaxing";
-    const response = await spotifyApi.searchTracks(query, { limit: 10 });
+    const response = await spotifyApi.searchTracks(query, { limit: 20 });
 
     const tracks = response.body.tracks.items.map((track) => ({
       name: track.name,
