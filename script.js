@@ -33,7 +33,7 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
         .join('');
     } catch (err) {
       console.error(err);
-      playlistContainer.innerHTML = '<p>Failed to load playlist 😞</p>';
+      playlistContainer.innerHTML = '<p>Failed to load playlist 🙃</p>';
     }
   });
   
