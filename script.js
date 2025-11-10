@@ -12,6 +12,11 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
         method: 'POST',
         body: JSON.stringify({ mood }),
       });
+      if (!res.ok){
+        const text = await res.text();
+        console.error('Error response:', text);
+        throw new Error('Network response was not ok');
+      }
       const data = await res.json();
   
       if (data.error) throw new Error(data.error);
@@ -28,7 +33,7 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
         .join('');
     } catch (err) {
       console.error(err);
-      playlistContainer.innerHTML = '<p>Failed to load playlist.</p>';
+      playlistContainer.innerHTML = '<p>Failed to load playlist 😞</p>';
     }
   });
   
