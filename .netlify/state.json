@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Rexburg",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "ID",
+				"name": "Idaho"
+			},
+			"timezone": "America/Boise",
+			"latitude": 43.8125,
+			"longitude": -111.7855,
+			"postalCode": "83440"
+		},
+		"timestamp": 1762733582166
+	}
+}
