@@ -8,7 +8,7 @@ node_modules/
 # Local build/dev files
 dist/
 .netlify/
-netlify/
+
 
 # Optional Vite/Temp Files
 *.log
