@@ -1,8 +1,17 @@
-# Local Netlify folder
-
+# Dependencies
 node_modules/
 .DS_Store
+
+# Environment variables
 .env
 
-# Local Netlify folder
-.netlify
+# Local build/dev files
+dist/
+.netlify/
+netlify/
+
+# Optional Vite/Temp Files
+*.log
+*.cache
+.vscode/
+.idea/
