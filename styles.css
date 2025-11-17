@@ -10,7 +10,7 @@
   --accent: #2b6cb0;
 }
 
-/* Full-Screen Repeating Music Notes + Rainbow Background */
+/* Full-Screen Repeating Music Notes + Animated Rainbow Background */
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -20,7 +20,7 @@ body {
     linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #b2fefa);
   background-repeat: repeat, no-repeat;
   background-size: 200px 200px, 1200% 1200%;
-  animation: rainbow 150s ease infinite;
+  animation: rainbow 150s linear infinite;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -170,3 +170,10 @@ footer {
   opacity: 0.8;
   z-index: 2;
 }
+
+/* Prevent any side scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
