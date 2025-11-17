@@ -24,10 +24,11 @@ export async function handler(event) {
       energetic: "energy workout",
       nostalgic: "classic hits",
       motivated: "motivation pop rock",
+      DR: "Dembow",
     };
 
     const query = moodMap[mood] || "chill relaxing";
-    const response = await spotifyApi.searchTracks(query, { limit: 20 });
+    const response = await spotifyApi.searchTracks(query, { limit: 10 });
 
     const tracks = response.body.tracks.items.map((track) => ({
       name: track.name,
