@@ -1,3 +1,5 @@
+// import {getArtist} from "./netlify/functions/getTrack";
+
 document.getElementById('mood-form').addEventListener('submit', async (e) => {
     e.preventDefault();
   
@@ -37,3 +39,14 @@ document.getElementById('mood-form').addEventListener('submit', async (e) => {
     }
   });
   
+
+// Test to make sure the handler is properly incorporating the API
+// async function testArtist() {
+//   const res = await fetch('/.netlify/functions/getArtist', {
+//     method: "POST",
+//     body: JSON.stringify({ id: "1uNFoZAHBGtllmzznpCI3s"}),
+//   });
+
+//   const data = await res.json();
+//   console.log("Artist : ", data)
+// }
